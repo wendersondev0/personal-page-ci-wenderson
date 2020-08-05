@@ -23,8 +23,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost/Projetos_pessoais/codeigniter_udemy/';
-// $config['base_url'] = 'http://4b2b1cfa51ef.ngrok.io/Projetos_pessoais/codeigniter_udemy/';
+$host = $_SERVER["HTTP_HOST"];
+$server = explode('/', $_SERVER["REQUEST_URI"]);
+$path = '';
+for ($i = 0; $i < count($server); $i++) {
+    if ($server[$i] != $server[count($server) - 1] && $server[$i] != '' && $server[$i] != 'restrict') {
+        $path .= '/' . $server[$i];
+    }
+}
+$path = 'http://' . $host  . $path;
+$config['base_url'] = $path;
 
 /*
 |--------------------------------------------------------------------------

@@ -1,5 +1,4 @@
-const BASE_URL = "http://localhost/Projetos_pessoais/codeigniter_udemy/";
-// const BASE_URL = "http://4b2b1cfa51ef.ngrok.io/Projetos_pessoais/codeigniter_udemy/";
+// const BASE_URL = "http://localhost/Projetos_pessoais/codeigniter_udemy/";
 
 const DATATABLE_PTBR = {
     "sEmptyTable": "Nenhum registro encontrado",

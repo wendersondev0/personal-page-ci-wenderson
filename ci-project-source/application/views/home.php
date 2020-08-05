@@ -10,6 +10,7 @@
 			</div>
 		</div>
 	</header>
+
 	<section id="about" class="light-bg">
 		<div class="container">
 			<div class="row">
@@ -64,7 +65,7 @@
 								<figure class="effect-bubba">
 									<img src="<?= base_url() . $project["project_img"] ?>" alt="<?= $project["project_img"] ?>" class="img-responsive center-block" />
 									<figcaption>
-										<h2><?= $project["project_name"] ?></h2>
+										<p><?= $project["project_name"] ?></p>
 										<a href="#" data-toggle="modal" data-target="#project_<?= $project["project_id"] ?>"></a>
 									</figcaption>
 								</figure>
