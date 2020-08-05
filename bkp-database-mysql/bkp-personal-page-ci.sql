@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 05-Ago-2020 às 04:21
+-- Tempo de geração: 05-Ago-2020 às 04:40
 -- Versão do servidor: 10.4.13-MariaDB
 -- versão do PHP: 7.2.31
 
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `personal-page-ci`
 --
+CREATE DATABASE IF NOT EXISTS `personal-page-ci` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `personal-page-ci`;
 
 -- --------------------------------------------------------
 
@@ -90,7 +92,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `user_login`, `password_hash`, `user_full_name`, `user_email`) VALUES
-(1, 'page-person-wenderson', '$2y$10$aQtCfXJlFaZiw2h7kYKuyeme4BiI9/CF7jPxkZ.UTO6HqGfkIzz4u', 'page-person-wenderson da silva schroder', 'page-person-wendersondasilva3@gmail.com');
+(1, 'admin', '$2y$10$/HWMY24WUFIcqgRW9X1ObOQrj0cCA8joP9m158A.dHe8wAf17JXHW', 'personal-page-ci', 'personal-page-ci-admin@personal-page-ci-admin');
 
 --
 -- Índices para tabelas despejadas
